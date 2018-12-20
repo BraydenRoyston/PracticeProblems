@@ -1,3 +1,6 @@
+# the purpose of this program is to take an input of a number, and then give an output of whether or not the number is even,
+# or if the number is divisble by another number
+
 print("Welcome to 'Does it Divide?'")
 print("This program can check if a number is even, or it can check if a number is divisible by another number.")
 print("Enter what you want the program to do (enter 'even' or 'factor check')")
