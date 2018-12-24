@@ -1,18 +1,18 @@
 # User guesses a number between 1 and 10 (including 1 and 10)
 # Program tells the user whether they guessed just right, too high, or too low.
+# Program continues until the user gets the correct answer.
 
 
 import random
 
 number = random.randint(1, 10)
-guess = int(input("Enter your guess:"))
 
-print(guess)
-print(number)
-
-if guess == number:
-    print("Correct! Congratulations!")
-elif guess > number:
-    print("Too high!")
-else:
-    print("Too low!")
+while True:
+    guess = int(input("Enter your guess:"))
+    if guess == number:
+        print("Correct! Congratulations!")
+        break
+    elif guess > number:
+        print("Too high!")
+    else:
+        print("Too low!")
