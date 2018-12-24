@@ -1,3 +1,7 @@
+# User guesses a number between 1 and 10 (including 1 and 10)
+# Program tells the user whether they guessed just right, too high, or too low.
+
+
 import random
 
 number = random.randint(1, 10)
