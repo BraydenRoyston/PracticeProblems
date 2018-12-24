@@ -1,18 +1,24 @@
 # User guesses a number between 1 and 10 (including 1 and 10)
 # Program tells the user whether they guessed just right, too high, or too low.
-# Program continues until the user gets the correct answer.
+# Program keeps track of how many attempts it takes the user to get the right answer.
 
 
 import random
 
 number = random.randint(1, 10)
 
+attempts = 0
+
 while True:
     guess = int(input("Enter your guess:"))
     if guess == number:
         print("Correct! Congratulations!")
+        attempts += 1
+        print("It took you " + str(attempts) + " attempts to get the correct answer.")
         break
     elif guess > number:
         print("Too high!")
+        attempts += 1
     else:
         print("Too low!")
+        attempts += 1
