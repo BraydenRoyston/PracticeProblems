@@ -1,4 +1,6 @@
-# This function prints the first and last vlaues in a list.
+# This function prints the first and last values in a list.
+# (made in a function for practice)
+
 
 a_list = [5, 10, 15, 20, 25]
 
