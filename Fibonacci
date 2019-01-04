@@ -4,3 +4,20 @@ def get_input(query = "enter a number:"):
     return input(query)
 
 userInput = int(get_input("Enter how many Fibonacci numbers you want the program to create:"))
+
+def FibonacciSequence(numberOfIterations):
+    i = 1
+    if numberOfIterations == 0:
+        fib = []
+    elif numberOfIterations == 1:
+        fib = [0]
+    elif numberOfIterations == 2:
+        fib = [0, 1]
+    elif numberOfIterations > 2:
+        fib = [0, 1]
+        while i < numberOfIterations-1:
+            fib.append(fib[i] + fib[i-1])
+            i += 1
+    return(fib)
+
+print(FibonacciSequence(userInput))
