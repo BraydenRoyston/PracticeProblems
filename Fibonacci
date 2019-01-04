@@ -1,0 +1,6 @@
+#Fibonacci
+
+def get_input(query = "enter a number:"):
+    return input(query)
+
+userInput = int(get_input("Enter how many Fibonacci numbers you want the program to create:"))
